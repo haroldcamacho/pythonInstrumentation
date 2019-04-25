@@ -1,0 +1,53 @@
+2019-04-25 16:42:03,690 - DEBUG] prog.py::create_program(50) - Force rebuilding? True
+2019-04-25 16:42:03,694 - DEBUG] prog.py::create_program(50) - Force rebuilding? True
+2019-04-25 16:42:03,694 - DEBUG] prog.py::create_program(57) - Bytecode := ['C:\\Users\\H4R0LD\\Desktop\\equipPython\\counter\\src\\codeExample.pyc', 'C:\\Users\\H4R0LD\\Desktop\\equipPython\\counter\\src\\myCode.pyc']
+2019-04-25 16:42:03,694 - DEBUG] instrument.py::instrument(114) - File: C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc
+2019-04-25 16:42:03,694 - DEBUG] code.py::get_imports_from_bytecode(598) - Found 0 import statements
+2019-04-25 16:42:03,694 - DEBUG] decl.py::parent(78) - Set parent. ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>)
+2019-04-25 16:42:03,694 - DEBUG] decl.py::add_child(96) - add_child:: Children: [MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high'))]
+2019-04-25 16:42:03,696 - DEBUG] code.py::build_representation(355) - Parent ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>) <- Child MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high'))
+2019-04-25 16:42:03,696 - DEBUG] decl.py::parent(78) - Set parent. ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>)
+2019-04-25 16:42:03,696 - DEBUG] decl.py::add_child(96) - add_child:: Children: [MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high')), MethodDeclaration#8(name=partition, args=('arr', 'low', 'high'))]
+2019-04-25 16:42:03,696 - DEBUG] code.py::build_representation(355) - Parent ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>) <- Child MethodDeclaration#8(name=partition, args=('arr', 'low', 'high'))
+2019-04-25 16:42:03,696 - DEBUG] code.py::build_representation(357) - ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>)
+    MethodDeclaration#8(name=partition, args=('arr', 'low', 'high'))
+    MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high'))
+
+2019-04-25 16:42:03,696 - DEBUG] code.py::__depth_visitor_run(172) - Execute visitor on: <__main__.CounterInstrumentationVisitor object at 0x0000000002EBC780>, main_module=ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc, co=<code object <module> at 0000000002EBA4B0, file "./src\codeExample.py", line 8>)
+2019-04-25 16:42:03,696 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: [MethodDeclaration#8(name=partition, args=('arr', 'low', 'high')), MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high'))]
+2019-04-25 16:42:03,698 - DEBUG] simple.py::insert_import(180) - Insert import on: MethodDeclaration#8(name=partition, args=('arr', 'low', 'high'))
+2019-04-25 16:42:03,698 - DEBUG] code.py::get_imports_from_bytecode(598) - Found 1 import statements
+2019-04-25 16:42:03,701 - DEBUG] utils.py::update_nested_code_object(24) - Looking in main <code object partition at 0000000002B67A30, file "./src\codeExample.py", line 8>, replace by <code object partition at 0000000002EBE330, file "./src\codeExample.py", line 8>
+2019-04-25 16:42:03,701 - DEBUG] utils.py::update_nested_code_object(48) - Created new CO: <code object <module> at 0000000002EBE3B0, file "./src\codeExample.py", line 8>
+2019-04-25 16:42:03,704 - DEBUG] simple.py::insert_import(180) - Insert import on: MethodDeclaration#31(name=quickSort, args=('arr', 'low', 'high'))
+2019-04-25 16:42:03,704 - DEBUG] simple.py::insert_import(187) - Already added imports in C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc
+2019-04-25 16:42:03,706 - DEBUG] utils.py::update_nested_code_object(24) - Looking in main <code object quickSort at 0000000002EBA430, file "./src\codeExample.py", line 31>, replace by <code object quickSort at 0000000002EBAD30, file "./src\codeExample.py", line 31>
+2019-04-25 16:42:03,706 - DEBUG] utils.py::update_nested_code_object(48) - Created new CO: <code object <module> at 0000000002EBE430, file "./src\codeExample.py", line 8>
+2019-04-25 16:42:03,706 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: []
+2019-04-25 16:42:03,706 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: []
+2019-04-25 16:42:03,711 - DEBUG] code.py::write(263) - Wrote file C:\Users\H4R0LD\Desktop\equipPython\counter\src\codeExample.pyc
+2019-04-25 16:42:03,711 - DEBUG] instrument.py::instrument(114) - File: C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc
+2019-04-25 16:42:03,711 - DEBUG] code.py::get_imports_from_bytecode(598) - Found 0 import statements
+2019-04-25 16:42:03,713 - DEBUG] decl.py::parent(78) - Set parent. ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>)
+2019-04-25 16:42:03,713 - DEBUG] decl.py::add_child(96) - add_child:: Children: [MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=())]
+2019-04-25 16:42:03,713 - DEBUG] code.py::build_representation(355) - Parent ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>) <- Child MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=())
+2019-04-25 16:42:03,713 - DEBUG] decl.py::parent(78) - Set parent. ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>)
+2019-04-25 16:42:03,713 - DEBUG] decl.py::add_child(96) - add_child:: Children: [MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=()), MethodDeclaration#1(name=recur_fibo, args=('n',))]
+2019-04-25 16:42:03,713 - DEBUG] code.py::build_representation(355) - Parent ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>) <- Child MethodDeclaration#1(name=recur_fibo, args=('n',))
+2019-04-25 16:42:03,713 - DEBUG] code.py::build_representation(357) - ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>)
+    MethodDeclaration#1(name=recur_fibo, args=('n',))
+    MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=())
+
+2019-04-25 16:42:03,713 - DEBUG] code.py::__depth_visitor_run(172) - Execute visitor on: <__main__.CounterInstrumentationVisitor object at 0x0000000002EBC780>, main_module=ModuleDeclaration(path=C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc, co=<code object <module> at 0000000002EBE530, file "./src\myCode.py", line 1>)
+2019-04-25 16:42:03,713 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: [MethodDeclaration#1(name=recur_fibo, args=('n',)), MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=())]
+2019-04-25 16:42:03,716 - DEBUG] simple.py::insert_import(180) - Insert import on: MethodDeclaration#1(name=recur_fibo, args=('n',))
+2019-04-25 16:42:03,716 - DEBUG] code.py::get_imports_from_bytecode(598) - Found 1 import statements
+2019-04-25 16:42:03,717 - DEBUG] utils.py::update_nested_code_object(24) - Looking in main <code object recur_fibo at 0000000002EBA530, file "./src\myCode.py", line 1>, replace by <code object recur_fibo at 0000000002EBE730, file "./src\myCode.py", line 1>
+2019-04-25 16:42:03,717 - DEBUG] utils.py::update_nested_code_object(48) - Created new CO: <code object <module> at 0000000002EBE7B0, file "./src\myCode.py", line 1>
+2019-04-25 16:42:03,720 - DEBUG] simple.py::insert_import(180) - Insert import on: MethodDeclaration#8(name=THISSHOULDBEFOUNDEASILY, args=())
+2019-04-25 16:42:03,720 - DEBUG] simple.py::insert_import(187) - Already added imports in C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc
+2019-04-25 16:42:03,720 - DEBUG] utils.py::update_nested_code_object(24) - Looking in main <code object THISSHOULDBEFOUNDEASILY at 0000000002EBE3B0, file "./src\myCode.py", line 8>, replace by <code object THISSHOULDBEFOUNDEASILY at 0000000002EBE830, file "./src\myCode.py", line 8>
+2019-04-25 16:42:03,720 - DEBUG] utils.py::update_nested_code_object(48) - Created new CO: <code object <module> at 0000000002EBE8B0, file "./src\myCode.py", line 1>
+2019-04-25 16:42:03,720 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: []
+2019-04-25 16:42:03,720 - DEBUG] code.py::__depth_visitor_run(180) - Visit children: []
+2019-04-25 16:42:03,724 - DEBUG] code.py::write(263) - Wrote file C:\Users\H4R0LD\Desktop\equipPython\counter\src\myCode.pyc
